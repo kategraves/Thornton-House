@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Thornton House: Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Thornton House, once home to Mary Thornton, is a historic landmark in Westerly, Rhode Island.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&family=EB+Garamond&display=swap" rel="stylesheet">    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
+
+<body>
+    <div id="container">
+
+    <header id="th-logo">
+        <div class="mobile">
+            <a href="index.html"><img src="images/logo.png" alt="Thornton House Logo"></a>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="visit.html">Visit</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+
+    <!-- Desktop Nav -->
+    <nav class="desktop">
+        <ul class="hover">
+            <li><a href="index.html">Home</a></li>  
+            <li><a href="visit.html">Visit</a></li> 
+            <li><a href="contact.html">Contact</a></li> 
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero image only for desktop viewports-->
+        <div class="desktop">
+            <a href="index.html"><img class="hero" src="images/hero-image.jpeg" alt="Thornton House"></a>
+        </div>
+
+        <div class="mobile">
+            <div id="intro">
+                <h1>Welcome to Thornton House</h1>
+                <p id="statement">Thornton House, built in 1863, is a historic landmark in Westerly, Rhode Island. Once inhabited by Mary Thornton, it is now said to be haunted by her and her alleged victims. Today, the house serves as a time capsule, preserving the history of the town and providing tours for those who wish to step into the past.</p>
+            </div>
+
+            <!-- Hero image only for mobile viewports -->
+            <div class="only-mobile">
+                <a href="index.html"><img class="hero" src="images/hero-image.jpeg" alt="Thornton House"></a>
+            </div>
+
+            <h2 id="history">History</h2>
+
+            <div class="grid-index">
+                <article id="origin">
+                    <h3>Origin</h3>
+                    <p>Thornton House was built in 1863 by Edward Thornton, a wealthy merchant from Providence, for his new wife, Mary. Soon after its construction, the Thorntons moved in accompanied by Mary’s mother, Catherine, and turned the house into an inn. Thornton House quickly became the most popular inn in Southern Rhode Island. Unfortunately, the good fortune did not last as Edward died in a freak accident in the spring of 1871, followed by Catherine four months later, leaving Mary to manage the inn.</p>
+                </article>
+            
+                <img id="map" src="images/map.jpg" alt="Old Map of Westerly Rhode Island">
+                
+                <!-- Figure and image only appear on desktop not mobile -->
+                <div class="desktop">
+                    <figure class="figure-mary">
+                        <img class="portrait" src="images/portrait.jpeg" alt="Portrait of Mary Thornton">
+                        <figcaption class="pic-text">- Mary Thornton-</figcaption>
+                    </figure>
+                </div>
+        
+                <article id="mary">
+                    <h3>Mary Thornton</h3>
+                    <p>Soon after the deaths of her family, neighbors noticed Mary began acting strangely. The once frugal Mary developed a taste for luxury and a habit of making expensive purchases. Neighbors also claimed to see smoke from one of Thornton Houses chimneys every afternoon, even in the dead of summer. Neighbors blamed her behavior on grief until 1875, when the body of a Thornton House tenant was found in the nearby woods. When authorities investigated, they found that over a dozen people had gone missing while staying at Thornton House over the course of six years. Mary never gave an explanation for the disappearances as she disappeared after the investigation began, never to be seen again</p>
+                </article>
+
+                <!-- Figure and image only appear on mobile not desktop -->
+                <div class="only-mobile">
+                    <figure class="figure-mary">
+                        <img class="portrait" src="images/portrait.jpeg" alt="Portrait of Mary Thornton">
+                        <figcaption class="pic-text">- Mary Thornton-</figcaption>
+                    </figure>
+                </div>
+
+                <article id="present">
+                    <h3>1873 to Present</h3>
+                    <p>Thornton House continued to be an inn until 1947, when it became a private residence until becoming a museum in 2001. And while Mary Thornton was never seen again, the strange disappearances continued well into the 20th century. Some of the missing persons have been accounted for, but most have not, and there is no concrete answer for what happened to them. 
+                        Today, Thornton House is one of the best-preserved houses from the 19th century in Rhode Island and is a popular destination for those interested in history and mystery alike.</p>
+                </article>
+
+                <div class="desktop">
+                    <video controls poster="images/video-poster.jpeg"> 
+                        <source src="media/video.mp4" type="video/mp4">
+                        <p>Your browser does not support the video element.</p>
+                    </video>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="mobile">
+            <p>&copy; Copyright 2023. All Rights Reserved.</p>
+            <p><a href="mailto:thorntonhouse@museum.net">thorntonhouse@museum.net</a></p>
+
+            <div class="social">
+                <a href="https://www.facebook.com/townofwesterly/" target="_blank"><img src="images/facebook-logo.png" alt="Blue and White Facebook Logo"></a>
+                <a href="https://www.instagram.com/seewesterlyri/?hl=en" target="_blank"><img src="images/instagram-logo.png" alt="Colorful Instagram Logo"></a>
+                <a href="https://twitter.com/townofwesterly?lang=en" target="_blank"><img src="images/twitter-logo.png" alt="Black X Logo"></a>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+     
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Thornton House: Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Thornton House, once home to Mary Thornton, is a historic landmark in Westerly, Rhode Island.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&family=EB+Garamond&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
+
+<body>
+    <div id="container">
+
+    <header id="th-logo">
+        <div class="mobile">
+            <a href="index.html"><img src="images/logo.png" alt="Thornton House Logo"></a>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="visit.html">Visit</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+
+    <!-- Desktop Nav -->
+    <nav class="desktop">
+        <ul class="hover">
+            <li><a href="index.html">Home</a></li>  
+            <li><a href="visit.html">Visit</a></li> 
+            <li><a href="contact.html">Contact</a></li> 
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero image only for desktop viewports -->
+        <div class="desktop">
+            <a href="index.html"><img class="hero" src="images/hero-image.jpeg" alt="Thornton House"></a>
+        </div>
+
+        <div class="mobile">
+            <h1>Template</h1>
+        </div>
+
+        <!-- Hero image only for mobile viewports -->
+        <div class="only-mobile">
+            <a href="index.html"><img id="hero" src="images/hero-image.jpeg" alt="Thornton House"></a>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="mobile">
+            <p>&copy; Copyright 2023. All Rights Reserved.</p>
+            <p><a href="mailto:thorntonhouse@museum.net">thorntonhouse@museum.net</a></p>
+
+            <div class="social">
+                <a href="https://www.facebook.com/townofwesterly/" target="_blank"><img src="images/facebook-logo.png" alt="Blue and White Facebook Logo"></a>
+                <a href="https://www.instagram.com/seewesterlyri/?hl=en" target="_blank"><img src="images/instagram-logo.png" alt="Colorful Instagram Logo"></a>
+                <a href="https://twitter.com/townofwesterly?lang=en" target="_blank"><img src="images/twitter-logo.png" alt="Black X Logo"></a>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+     
+</html>
+   

@@ -1,0 +1,507 @@
+/* To do:
+In mobile - make header sticky - maybe
+In mobile - change size of map
+Do mobile friendly test (chapter 5)
+REDO FAVICON
+*/
+
+
+/*CSS Reset*/
+body, header, nav, main, footer, img, h1, h2, h3, p, article, video, div, figure, figcaption, form, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+#container {
+    width: 99%;
+}
+  
+/* Style rules for body and image */
+body {
+    background-color: #F1EEEB;
+}
+
+img {
+    max-width: 99%;
+    display: block;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rules for header */
+header {
+    display: inline-block;
+    margin: .5em 0 .5em 5.2em;
+    width: 60%;
+    
+}
+
+/* Style rules for hamburger menu */
+.mobile-nav a{
+    color: #4D4339;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon {
+    display: inline-block;
+    right: 0;
+    left: 80%;
+    top: 3%;
+    position: absolute;
+}
+
+/* Show mobile class, hide desktop class and menu-links */
+.mobile, .only-mobile {
+    display: block;
+}
+
+.desktop, #menu-links {
+    display: none;
+}
+
+/* Style rules for main content */
+main { 
+    padding: 2%;
+    font-size: 1.2em;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+
+article {
+    margin-bottom: .5em;
+    border: 3px solid #4D4339;
+    padding: .5em;
+    background-color: #DAD4CF;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: .5em;
+    border-bottom: 4.5px solid #4D4339;
+    color: #4D4339;
+    font-family: 'Charm', cursive;
+}
+
+h2, h3 {
+    padding: .5em;
+    color: #4D4339;
+    font-family: 'Charm', cursive;
+}
+
+p {
+    color: #5D5044;
+    margin: .5em;
+}
+
+a {
+    text-decoration: none;
+    color: #5D5044;
+    font-weight: bold;
+}
+
+    /* Style rules for table - main content */
+table {
+    padding: .5em;
+}
+
+caption {
+    font-family: 'Charm', cursive;
+    color: #4D4339;
+    font-size: 1.7em;
+    padding-top: .5em;
+}
+
+td {
+    height: 3em;
+}
+
+    /* Style rules for form - main conent */
+form {
+    margin-bottom: .5em;
+    border: 4.5px solid #4D4339;
+    background-color: #DAD4CF;
+}
+
+fieldset, input, select, textarea {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+label {
+    display: inline-block;
+}
+
+option {
+    color: #4D4339;
+}
+
+.button {
+    margin: 2% 2% 0 2%;
+    font-size: .9em;
+    color: #4D4339;
+  
+}
+
+.email, #first-name, #last-name {
+    display: inline-block;
+}
+
+    /* Style rules for classes - main content */
+.day {
+    font-weight: bold;
+    color: #4D4339;
+}
+
+    /* Id - main content */
+#history {
+    border-top: 4.5px solid #4D4339;
+    border-bottom: 4.5px solid #4D4339;
+    margin-bottom: .5em;
+}
+
+#statement {
+    padding-bottom: 1.5em;
+    border-bottom: 4.5px solid #4D4339;
+}
+
+#present {
+    margin-top: .5em;
+}
+
+#location, #admission, #info {
+    margin-bottom: .5em;
+    border: 4.5px solid #4D4339;
+    background-color: #DAD4CF;
+}
+
+#location h2 {
+    padding-bottom: 0;
+}
+
+#info a {
+    font-weight: bold;
+    color: #4D4339;
+}
+
+#info h2 {
+    padding-bottom: 0;
+}
+
+#info p {
+    padding: .2em;
+}
+
+#address {
+    color: #4D4339;
+}
+
+#monday, #friday, #sunday {
+    margin: .9em;
+}
+
+    /* Style rules for images - main content */
+.hero {
+    margin-bottom: .5em;
+    border: 4.5px solid #4D4339;
+} 
+
+.portrait {
+border: 4px solid #4D4339;
+width: 50%; 
+display: inline-block;
+}
+
+.figure-mary {
+    position: relative;
+}
+
+.table {
+    width: 60%;
+    border: 4px solid #4D4339; 
+    display: inline-block;
+}
+
+#map {
+    width: 20em;
+    border: 4px solid #4D4339;
+    margin-bottom: .5em;
+    margin-left: 3%;
+}
+
+#bedroom {
+    width: 60%;
+    border: 4px solid #4D4339; 
+    display: inline-block;
+}
+
+#barn {
+    display: inline-block;
+    border: 4px solid #4D4339; 
+}   
+
+/* Style rules for footer content */
+footer {
+    clear: both;
+    background-color: #DAD4CF;
+    border: 3px solid #4D4339;
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+.social a {
+    display: inline-block;
+    padding: 0 2%;
+}
+
+/* Media query for desktop viewport */
+@media screen and (min-width: 1293px), print {
+    /* Desktop viewport: show desktop class hide only-mobile and mobile-nav classes */
+    .desktop {
+        display: block;
+    }
+
+    .only-mobile, .mobile-nav {
+        display: none;
+    }
+
+    /* Desktop viewport: style rule for body */
+    body {
+        background: linear-gradient(to left, #F1EEEB, #D3D0CD);
+    }
+
+    /* Desktop viewport: style rule for header */
+    header {
+        width: 25%;
+        float: left;
+        margin: 2em;
+    }
+
+    /* Desktop viewport: style rule for nav area */
+    nav {
+        width: 68%;
+        float: right;
+        margin: 3.2em 2em 0 0;
+        text-align: center;
+        padding: 1%;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: .5em;
+        text-align: center;
+        background-color: #DAD4CF;
+        border: 6.5px solid #4D4339;
+        background: linear-gradient(to bottom, #DAD4CF, #B8B4B1);
+    }
+        
+    nav li {
+        display: inline-block;
+        font-size: 2.5em;
+        border: none;
+        font-family: 'Charm', cursive;
+        padding: .2em;
+    }   
+
+    nav li a {
+        display: block;
+        color: #4D4339;
+        padding: 0.5em 1em;
+        text-decoration: none;
+    }
+    
+    nav li a:hover {
+        transform: scale(1.1);
+    }
+
+    /* Desktop viewport: style rule for main content */
+    main {
+        font-size: 1.5em;
+    }
+
+    article {
+        width: 25em;
+        background: linear-gradient(to bottom, #DAD4CF, #B8B4B1);
+    }
+
+        /* Desktop viewport: style rules for form */
+    form {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        width: 95%;
+        margin-right: 5em;
+        background: linear-gradient(to bottom, #DAD4CF, #B8B4B1);
+    }
+
+    .button {
+        margin: .5%;
+    }
+
+    #reason {
+        display: block;
+    }
+
+    #both-buttons {
+        display: block;
+    }
+
+        /* Desktop viewport: class - main content */
+    .grid-index {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .grid-visit {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .grid-contact {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .hover a:hover {
+        border-bottom: solid #4D4339;
+    }
+
+        /* Desktop viewport: id - main content */
+
+    #history {
+        border-top: none;
+    }
+
+    #origin {
+        grid-column: 1;
+        grid-row: 1;
+        margin-left: 8%;
+        margin-top: 2%;
+    }
+
+    #mary {
+        grid-column: 2;
+        grid-row: 2;
+        margin-left: 10%;
+    }
+
+    #present {
+        grid-column: 1;
+        grid-row: 3;
+        margin-left: 8%;
+    }
+
+    #location {
+        grid-column: 1;
+        grid-row: 1;
+        width: 25em;
+        margin-left: 8%;
+        background: linear-gradient(to bottom, #DAD4CF, #B8B4B1);
+    }
+
+    #admission {
+        grid-column: 2;
+        grid-row: 2;
+        width: 25em;
+        margin-left: 8%;
+        background: linear-gradient(to bottom, #DAD4CF, #B8B4B1);
+        border: 4.5px solid #4D4339;
+    }
+
+    #info {
+        display: inline-block;
+        width: 85%;
+        margin-left: 2em;
+        border: 4.5px solid #4D4339;
+        background: linear-gradient(to bottom, #DAD4CF, #B8B4B1);
+    }
+
+        /* Desktop viewport: images and video - main conent */
+    video {
+        grid-column: 2;
+        grid-row: 3;
+        width: 80%;
+        margin-top: 12%;
+        margin-left: 5%;
+        border: 4.5px solid #4D4339;
+    }  
+
+    .portrait {
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 4em;
+        margin-left: 2em;
+    }
+
+    .table {
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 4.5%;
+        margin-left: 4%;
+    }
+
+    #map {
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 3em;
+        margin-left: 5.3em;
+    }
+
+    #bedroom {
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 8%;
+        margin-left: 20%;
+    }
+
+    #barn {
+        grid-column: 1;
+        grid-row: 2;
+        width: 85%;
+        margin-top: 1.1em;
+    }
+
+    /* Desktop viewport: style rules for footer conent */
+   
+}
+
+/* Media query for print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
